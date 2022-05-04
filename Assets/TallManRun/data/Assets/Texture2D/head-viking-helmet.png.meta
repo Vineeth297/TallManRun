@@ -1,0 +1,258 @@
+fileFormatVersion: 2
+guid: 171da83a1272876428e231cee87a1193
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: head-viking-helmet
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 47
+  maxTextureSize: 512
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: head-viking-helmet
+      rect:
+        serializedVersion: 2
+        x: 3.026751
+        y: 13.07612
+        width: 508.89713
+        height: 488.87256
+      alignment: 9
+      pivot: {x: 0.49710095, y: 0.49690634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 54.52469, y: -237.51239}
+        - {x: 48.52469, y: -229.5124}
+        - {x: 48.52469, y: -187.5124}
+        - {x: -10.475311, y: -189.5124}
+        - {x: -27.475311, y: -188.5124}
+        - {x: -92.47531, y: -176.5124}
+        - {x: -132.47531, y: -158.5124}
+        - {x: -157.47531, y: -133.5124}
+        - {x: -163.47531, y: -104.512405}
+        - {x: -174.47531, y: -94.512405}
+        - {x: -221.47531, y: -50.512405}
+        - {x: -253.47531, y: 26.487595}
+        - {x: -254.47531, y: 31.487595}
+        - {x: -254.47531, y: 56.487595}
+        - {x: -246.47531, y: 92.487595}
+        - {x: -243.47531, y: 106.4876}
+        - {x: -178.47531, y: 98.487595}
+        - {x: -172.47531, y: 62.487595}
+        - {x: -145.47531, y: 21.487595}
+        - {x: -113.47531, y: 7.4875946}
+        - {x: -97.47531, y: 25.487597}
+        - {x: -71.47531, y: 47.487595}
+        - {x: -23.475311, y: 70.487595}
+        - {x: 31.524689, y: 73.487595}
+        - {x: 70.52469, y: 65.487595}
+        - {x: 93.52469, y: 48.487595}
+        - {x: 143.52469, y: 91.487595}
+        - {x: 176.52469, y: 142.4876}
+        - {x: 182.52469, y: 202.4876}
+        - {x: 180.52469, y: 237.48761}
+        - {x: 183.52469, y: 244.4876}
+        - {x: 199.52469, y: 244.4876}
+        - {x: 212.5247, y: 238.48761}
+        - {x: 227.52469, y: 214.48761}
+        - {x: 247.52469, y: 175.4876}
+        - {x: 254.52469, y: 135.4876}
+        - {x: 254.52469, y: 117.4876}
+        - {x: 236.5247, y: 48.487595}
+        - {x: 217.52469, y: 10.487595}
+        - {x: 176.52469, y: -46.512405}
+        - {x: 185.52469, y: -112.512405}
+        - {x: 186.52469, y: -128.5124}
+        - {x: 173.52469, y: -141.5124}
+        - {x: 160.52469, y: -155.5124}
+        - {x: 161.52469, y: -203.5124}
+        - {x: 121.52469, y: -244.5124}
+        - {x: 93.52469, y: -244.5124}
+      physicsShape:
+      - - {x: 159.52469, y: -175.5124}
+        - {x: 159.52469, y: -154.5124}
+        - {x: 185.52469, y: -128.5124}
+        - {x: 183.52467, y: -104.512405}
+        - {x: 181.52469, y: -91.512405}
+        - {x: 177.52469, y: -74.5124}
+        - {x: 171.52469, y: -45.512405}
+        - {x: 189.52469, y: -26.512405}
+        - {x: 197.52469, y: -14.512405}
+        - {x: 235.52467, y: 50.487595}
+        - {x: 247.52469, y: 98.487595}
+        - {x: 254.52469, y: 124.487595}
+        - {x: 254.52469, y: 132.48758}
+        - {x: 248.52469, y: 154.4876}
+        - {x: 245.52469, y: 174.4876}
+        - {x: 236.52467, y: 193.4876}
+        - {x: 225.52469, y: 214.48758}
+        - {x: 221.52469, y: 219.4876}
+        - {x: 205.52469, y: 237.48758}
+        - {x: 197.52469, y: 244.4876}
+        - {x: 192.52469, y: 244.4876}
+        - {x: 185.52469, y: 240.48758}
+        - {x: 182.52467, y: 235.48758}
+        - {x: 182.52467, y: 225.4876}
+        - {x: 184.52469, y: 201.4876}
+        - {x: 183.52467, y: 179.4876}
+        - {x: 177.52469, y: 141.4876}
+        - {x: 153.52469, y: 102.487595}
+        - {x: 151.52469, y: 97.48759}
+        - {x: 130.52469, y: 78.48759}
+        - {x: 107.52469, y: 56.487595}
+        - {x: 92.52469, y: 47.48759}
+        - {x: 83.52469, y: 53.487595}
+        - {x: 68.52469, y: 62.487595}
+        - {x: 60.52469, y: 66.487595}
+        - {x: 49.52469, y: 66.487595}
+        - {x: 29.524689, y: 69.487595}
+        - {x: -21.47531, y: 69.487595}
+        - {x: -29.475311, y: 66.487595}
+        - {x: -46.47531, y: 58.48759}
+        - {x: -65.47531, y: 48.487595}
+        - {x: -75.47531, y: 41.48759}
+        - {x: -91.47531, y: 28.487593}
+        - {x: -113.47531, y: 5.4875946}
+        - {x: -125.47531, y: 11.487595}
+        - {x: -144.47531, y: 19.487595}
+        - {x: -148.4753, y: 20.487595}
+        - {x: -170.47531, y: 47.48759}
+        - {x: -178.47531, y: 81.487595}
+        - {x: -180.47531, y: 86.487595}
+        - {x: -184.47531, y: 91.487595}
+        - {x: -199.4753, y: 97.48759}
+        - {x: -209.47531, y: 98.487595}
+        - {x: -238.4753, y: 98.487595}
+        - {x: -242.4753, y: 96.48759}
+        - {x: -248.47531, y: 70.487595}
+        - {x: -253.47531, y: 46.487595}
+        - {x: -254.47531, y: 39.487595}
+        - {x: -248.47531, y: 23.487595}
+        - {x: -228.47531, y: -28.512403}
+        - {x: -224.47531, y: -38.512405}
+        - {x: -219.47531, y: -48.512405}
+        - {x: -184.47531, y: -83.512405}
+        - {x: -162.47531, y: -103.512405}
+        - {x: -152.47531, y: -110.512405}
+        - {x: -154.47531, y: -124.512405}
+        - {x: -154.47531, y: -131.5124}
+        - {x: -148.4753, y: -139.5124}
+        - {x: -132.47531, y: -155.5124}
+        - {x: -111.47531, y: -166.5124}
+        - {x: -90.47531, y: -174.5124}
+        - {x: -76.47531, y: -177.5124}
+        - {x: -49.47531, y: -182.5124}
+        - {x: -35.47531, y: -184.5124}
+        - {x: -21.47531, y: -187.5124}
+        - {x: -12.475311, y: -187.5124}
+        - {x: -11.47531, y: -186.51239}
+        - {x: 41.524685, y: -186.51239}
+        - {x: 49.52469, y: -185.51239}
+        - {x: 49.52469, y: -228.5124}
+        - {x: 54.52469, y: -235.51239}
+        - {x: 61.52469, y: -236.51239}
+        - {x: 89.52469, y: -241.51239}
+        - {x: 109.52469, y: -244.51239}
+        - {x: 114.52469, y: -244.51239}
+        - {x: 123.52469, y: -236.51239}
+        - {x: 149.52469, y: -211.51239}
+        - {x: 158.52467, y: -202.5124}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca6d0036c2c4e73b899f05e185ea742
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      head-viking-helmet: 21300000
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

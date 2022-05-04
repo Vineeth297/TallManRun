@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: a35f9efcc200f46428be1cae09e8140d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: CrossPromoFrame
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 47
+  maxTextureSize: 332
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CrossPromoFrame
+      rect:
+        serializedVersion: 2
+        x: 1.0761205
+        y: 0
+        width: 286.9239
+        height: 330.9239
+      alignment: 9
+      pivot: {x: 0.4981247, y: 0.5016259}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -141.53807, y: -154.46196}
+        - {x: -142.53807, y: -151.46196}
+        - {x: -142.53807, y: -147.46196}
+        - {x: -143.53807, y: -146.46196}
+        - {x: -143.53807, y: 146.53804}
+        - {x: -142.53807, y: 147.53804}
+        - {x: -142.53807, y: 151.53804}
+        - {x: -141.53807, y: 152.53804}
+        - {x: -140.53807, y: 156.53804}
+        - {x: -134.53807, y: 162.53804}
+        - {x: -130.53807, y: 163.53804}
+        - {x: -129.53807, y: 164.53804}
+        - {x: -125.53807, y: 164.53804}
+        - {x: -124.53807, y: 165.53804}
+        - {x: 125.46193, y: 165.53804}
+        - {x: 126.46193, y: 164.53804}
+        - {x: 131.46193, y: 164.53804}
+        - {x: 134.46193, y: 163.53804}
+        - {x: 137.46193, y: 161.53804}
+        - {x: 142.46193, y: 155.53804}
+        - {x: 143.46193, y: 152.53804}
+        - {x: 143.46193, y: -152.46196}
+        - {x: 142.46193, y: -153.46196}
+        - {x: 141.46193, y: -157.46196}
+        - {x: 136.46193, y: -163.46196}
+        - {x: 130.46193, y: -165.46196}
+        - {x: -129.53807, y: -165.46196}
+        - {x: -132.53807, y: -164.46196}
+        - {x: -135.53807, y: -162.46196}
+        - {x: -139.53807, y: -159.46196}
+      physicsShape:
+      - - {x: -132.53807, y: 155.53804}
+        - {x: -132.53807, y: -154.46196}
+        - {x: 128.46193, y: -154.46196}
+        - {x: 132.46193, y: -152.46196}
+        - {x: 132.46193, y: 153.53804}
+        - {x: 131.46193, y: 155.53804}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda3042e312a450c930df07e13582c8f
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      CrossPromoFrame: 21300000
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

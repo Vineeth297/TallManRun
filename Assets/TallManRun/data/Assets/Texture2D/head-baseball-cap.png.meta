@@ -1,0 +1,262 @@
+fileFormatVersion: 2
+guid: 959c1558f84e9c843b20a61913547bb2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: head-baseball-cap
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 47
+  maxTextureSize: 512
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: head-baseball-cap
+      rect:
+        serializedVersion: 2
+        x: 5.0761204
+        y: 41.026752
+        width: 501.89713
+        height: 434.89713
+      alignment: 9
+      pivot: {x: 0.4999508, y: 0.4943083}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -249.02469, y: -1.4753113}
+        - {x: -251.02469, y: 12.52469}
+        - {x: -251.02469, y: 48.52469}
+        - {x: -246.02469, y: 81.52469}
+        - {x: -234.02467, y: 102.52468}
+        - {x: -218.02469, y: 135.52469}
+        - {x: -212.02467, y: 144.52469}
+        - {x: -183.02469, y: 175.52469}
+        - {x: -144.02469, y: 196.52469}
+        - {x: -129.02469, y: 201.52469}
+        - {x: -99.02469, y: 210.5247}
+        - {x: -77.02469, y: 215.52469}
+        - {x: -67.02469, y: 217.52469}
+        - {x: -39.02469, y: 217.52469}
+        - {x: -21.024689, y: 213.5247}
+        - {x: -7.0246887, y: 211.5247}
+        - {x: 0.9753113, y: 209.52467}
+        - {x: 10.975311, y: 205.52469}
+        - {x: 38.97531, y: 195.52469}
+        - {x: 77.97531, y: 165.52469}
+        - {x: 85.97531, y: 150.52469}
+        - {x: 107.97532, y: 113.52469}
+        - {x: 132.97531, y: 67.52469}
+        - {x: 148.97531, y: 27.52469}
+        - {x: 149.97531, y: -3.4753113}
+        - {x: 158.97531, y: -11.475311}
+        - {x: 178.97531, y: -25.475311}
+        - {x: 211.9753, y: -47.47531}
+        - {x: 222.97531, y: -55.475307}
+        - {x: 236.9753, y: -67.47531}
+        - {x: 246.97531, y: -87.47531}
+        - {x: 250.97531, y: -96.47531}
+        - {x: 250.97531, y: -108.4753}
+        - {x: 249.97531, y: -120.4753}
+        - {x: 241.97531, y: -139.47531}
+        - {x: 235.9753, y: -144.47531}
+        - {x: 224.97531, y: -151.47531}
+        - {x: 190.97531, y: -172.47531}
+        - {x: 158.97531, y: -187.47531}
+        - {x: 140.97531, y: -195.47531}
+        - {x: 123.97531, y: -201.47531}
+        - {x: 84.97531, y: -211.4753}
+        - {x: 62.97531, y: -217.47533}
+        - {x: 53.975315, y: -217.47533}
+        - {x: 31.975311, y: -212.4753}
+        - {x: -4.0246887, y: -204.47531}
+        - {x: -9.024689, y: -202.47531}
+        - {x: -48.02469, y: -169.47531}
+        - {x: -59.024685, y: -158.47531}
+        - {x: -87.02469, y: -135.47531}
+        - {x: -143.02469, y: -106.47531}
+        - {x: -155.02469, y: -100.47531}
+        - {x: -193.02469, y: -73.47531}
+        - {x: -236.02467, y: -39.47531}
+        - {x: -244.02469, y: -13.475311}
+      physicsShape:
+      - - {x: 120.9753, y: -201.47531}
+        - {x: 130.97531, y: -197.47531}
+        - {x: 150.97531, y: -187.4753}
+        - {x: 155.97531, y: -186.4753}
+        - {x: 165.97531, y: -181.47531}
+        - {x: 189.97531, y: -172.47531}
+        - {x: 217.97531, y: -154.47531}
+        - {x: 236.9753, y: -142.47531}
+        - {x: 243.97531, y: -134.47531}
+        - {x: 244.97531, y: -127.47531}
+        - {x: 248.97531, y: -115.47531}
+        - {x: 249.97531, y: -107.4753}
+        - {x: 250.97531, y: -100.4753}
+        - {x: 250.97531, y: -97.47531}
+        - {x: 241.9753, y: -80.47531}
+        - {x: 235.9753, y: -69.4753}
+        - {x: 231.97531, y: -64.47531}
+        - {x: 208.9753, y: -47.47531}
+        - {x: 184.9753, y: -30.475311}
+        - {x: 169.97531, y: -20.475311}
+        - {x: 147.97531, y: -4.4753113}
+        - {x: 148.97531, y: 20.524687}
+        - {x: 136.97531, y: 54.52469}
+        - {x: 134.97531, y: 63.52469}
+        - {x: 125.97531, y: 78.52469}
+        - {x: 117.9753, y: 92.52469}
+        - {x: 110.97531, y: 105.52468}
+        - {x: 97.9753, y: 127.52469}
+        - {x: 82.97531, y: 152.52469}
+        - {x: 77.97531, y: 160.52469}
+        - {x: 73.97531, y: 166.52469}
+        - {x: 53.975307, y: 183.52469}
+        - {x: 40.97531, y: 192.52469}
+        - {x: 31.975311, y: 197.52469}
+        - {x: 18.975311, y: 201.52469}
+        - {x: 0.9753113, y: 208.52467}
+        - {x: -8.024689, y: 210.52467}
+        - {x: -21.024689, y: 212.52467}
+        - {x: -44.02469, y: 217.52469}
+        - {x: -62.02469, y: 217.52469}
+        - {x: -72.02469, y: 214.52467}
+        - {x: -82.02469, y: 212.52467}
+        - {x: -92.02468, y: 211.52467}
+        - {x: -110.02469, y: 206.52467}
+        - {x: -126.02469, y: 201.52469}
+        - {x: -143.02469, y: 196.52469}
+        - {x: -165.02469, y: 184.52469}
+        - {x: -183.02469, y: 174.52469}
+        - {x: -196.02467, y: 161.52469}
+        - {x: -200.02469, y: 154.52469}
+        - {x: -216.02467, y: 136.52469}
+        - {x: -241.02467, y: 86.52469}
+        - {x: -244.02469, y: 79.52469}
+        - {x: -246.02469, y: 68.52469}
+        - {x: -249.02469, y: 47.52469}
+        - {x: -251.02469, y: 40.524685}
+        - {x: -251.02469, y: 17.524687}
+        - {x: -246.02469, y: -5.4753113}
+        - {x: -241.02467, y: -19.475311}
+        - {x: -235.02467, y: -36.47531}
+        - {x: -232.02469, y: -40.47531}
+        - {x: -211.02467, y: -57.47531}
+        - {x: -202.02469, y: -64.47531}
+        - {x: -189.02469, y: -75.4753}
+        - {x: -172.02467, y: -86.47531}
+        - {x: -151.02469, y: -101.4753}
+        - {x: -121.02468, y: -116.47531}
+        - {x: -112.02469, y: -120.4753}
+        - {x: -93.02469, y: -130.47531}
+        - {x: -81.02469, y: -137.47531}
+        - {x: -58.02469, y: -157.47531}
+        - {x: -51.02469, y: -163.47531}
+        - {x: -38.02469, y: -176.47531}
+        - {x: -23.024687, y: -188.47531}
+        - {x: -9.024689, y: -201.47531}
+        - {x: -4.0246887, y: -203.47531}
+        - {x: 12.975311, y: -207.47531}
+        - {x: 34.97531, y: -212.4753}
+        - {x: 49.97531, y: -214.4753}
+        - {x: 51.97531, y: -216.4753}
+        - {x: 65.97531, y: -216.4753}
+        - {x: 84.97531, y: -210.47531}
+        - {x: 101.97531, y: -206.47531}
+        - {x: 107.9753, y: -203.47531}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc895e65f2f49ffa144f90ffba99774
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      head-baseball-cap: 21300000
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

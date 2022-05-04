@@ -1,0 +1,264 @@
+fileFormatVersion: 2
+guid: c780945e4d6e4634494d96a882ef3694
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: head-gladiator-helmet
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 47
+  maxTextureSize: 512
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: head-gladiator-helmet
+      rect:
+        serializedVersion: 2
+        x: 88.02675
+        y: 6.026751
+        width: 338.89716
+        height: 499.93695
+      alignment: 9
+      pivot: {x: 0.4956467, y: 0.50000954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -152.47533, y: -143.99524}
+        - {x: -169.47533, y: -130.99524}
+        - {x: -169.47533, y: -119.99525}
+        - {x: -159.47533, y: -72.99524}
+        - {x: -134.47533, y: 21.00476}
+        - {x: -120.475334, y: 35.00476}
+        - {x: -169.47533, y: 60.004765}
+        - {x: -169.47533, y: 62.00476}
+        - {x: -162.47533, y: 121.00476}
+        - {x: -157.47533, y: 140.00476}
+        - {x: -128.47533, y: 206.00476}
+        - {x: -84.47533, y: 241.00478}
+        - {x: -74.47533, y: 244.00476}
+        - {x: -36.475327, y: 250.00476}
+        - {x: 39.524673, y: 250.00476}
+        - {x: 121.52467, y: 217.00476}
+        - {x: 119.52467, y: 213.00478}
+        - {x: 71.52467, y: 136.00476}
+        - {x: 59.524673, y: 117.00475}
+        - {x: 71.52467, y: 108.00477}
+        - {x: 72.52467, y: 89.00476}
+        - {x: 98.52467, y: 74.00476}
+        - {x: 133.52467, y: 51.00476}
+        - {x: 146.52467, y: 41.00476}
+        - {x: 162.52467, y: -8.995239}
+        - {x: 169.52467, y: -56.99524}
+        - {x: 169.52467, y: -114.99524}
+        - {x: 167.52467, y: -174.99524}
+        - {x: 156.52467, y: -190.99524}
+        - {x: 136.52467, y: -187.99524}
+        - {x: 121.52467, y: -174.99524}
+        - {x: 118.52468, y: -148.99524}
+        - {x: 121.52467, y: -128.99524}
+        - {x: 62.524673, y: -137.99524}
+        - {x: -12.475327, y: -144.99524}
+        - {x: -35.475327, y: -144.99524}
+        - {x: -26.475327, y: -211.99522}
+        - {x: -29.475327, y: -237.99525}
+        - {x: -38.475327, y: -247.99524}
+        - {x: -47.475327, y: -249.99524}
+        - {x: -68.47533, y: -249.99524}
+        - {x: -86.47533, y: -244.99524}
+        - {x: -99.47533, y: -221.99524}
+        - {x: -98.47533, y: -114.99524}
+        - {x: -118.47532, y: -107.99525}
+        - {x: -132.47533, y: -146.99524}
+      physicsShape:
+      - - {x: -34.475327, y: -181.99524}
+        - {x: -35.475327, y: -176.99524}
+        - {x: -36.475327, y: -170.99522}
+        - {x: -37.475327, y: -165.99524}
+        - {x: -38.475327, y: -154.99524}
+        - {x: -39.475327, y: -149.99524}
+        - {x: -36.475327, y: -142.99524}
+        - {x: -13.475327, y: -142.99524}
+        - {x: 23.524673, y: -139.99524}
+        - {x: 48.524673, y: -136.99524}
+        - {x: 66.52467, y: -135.99524}
+        - {x: 74.52467, y: -133.99522}
+        - {x: 103.524666, y: -128.99524}
+        - {x: 123.52467, y: -120.99523}
+        - {x: 121.52467, y: -138.99524}
+        - {x: 120.52467, y: -150.99524}
+        - {x: 123.52467, y: -172.99524}
+        - {x: 137.52467, y: -186.99524}
+        - {x: 147.52467, y: -187.99524}
+        - {x: 157.52466, y: -186.99524}
+        - {x: 162.52467, y: -178.99524}
+        - {x: 165.52467, y: -167.99524}
+        - {x: 166.52467, y: -140.99524}
+        - {x: 167.52467, y: -124.99524}
+        - {x: 168.52467, y: -95.99524}
+        - {x: 169.52466, y: -92.99524}
+        - {x: 169.52466, y: -77.99524}
+        - {x: 166.52467, y: -57.99524}
+        - {x: 163.52467, y: -32.99524}
+        - {x: 160.52467, y: -13.995239}
+        - {x: 154.52467, y: 14.004761}
+        - {x: 149.52467, y: 28.00476}
+        - {x: 141.52467, y: 43.004757}
+        - {x: 115.524666, y: 61.00476}
+        - {x: 104.524666, y: 68.00476}
+        - {x: 70.52467, y: 88.00476}
+        - {x: 70.52467, y: 104.00476}
+        - {x: 69.52467, y: 108.00475}
+        - {x: 62.524673, y: 114.00476}
+        - {x: 56.524673, y: 117.00475}
+        - {x: 74.52467, y: 144.00476}
+        - {x: 108.52467, y: 199.00476}
+        - {x: 118.524666, y: 211.00475}
+        - {x: 114.52467, y: 220.00476}
+        - {x: 105.524666, y: 221.00476}
+        - {x: 93.52467, y: 226.00476}
+        - {x: 82.52467, y: 230.00476}
+        - {x: 35.524673, y: 249.00476}
+        - {x: 32.524673, y: 250.00476}
+        - {x: -5.4753265, y: 250.00476}
+        - {x: -31.475325, y: 249.00476}
+        - {x: -73.47533, y: 242.00475}
+        - {x: -80.47533, y: 240.00475}
+        - {x: -92.47533, y: 232.00476}
+        - {x: -126.47533, y: 206.00476}
+        - {x: -134.47533, y: 186.00476}
+        - {x: -146.47533, y: 158.00476}
+        - {x: -152.47533, y: 145.00476}
+        - {x: -157.47533, y: 131.00476}
+        - {x: -159.47533, y: 113.00476}
+        - {x: -161.47531, y: 101.00476}
+        - {x: -162.47533, y: 90.00476}
+        - {x: -165.47533, y: 71.00476}
+        - {x: -166.47533, y: 61.00476}
+        - {x: -154.47533, y: 54.004757}
+        - {x: -115.47533, y: 36.00476}
+        - {x: -130.47533, y: 21.00476}
+        - {x: -136.47533, y: 6.0047607}
+        - {x: -139.47533, y: -9.995238}
+        - {x: -150.47533, y: -49.99524}
+        - {x: -154.47533, y: -71.99524}
+        - {x: -158.47533, y: -92.99524}
+        - {x: -159.47533, y: -99.99524}
+        - {x: -167.47533, y: -121.99524}
+        - {x: -167.47533, y: -130.99524}
+        - {x: -159.47533, y: -138.99524}
+        - {x: -151.47533, y: -142.99524}
+        - {x: -135.47531, y: -142.99524}
+        - {x: -132.47533, y: -139.99524}
+        - {x: -123.47533, y: -106.99523}
+        - {x: -109.47532, y: -100.99524}
+        - {x: -99.47532, y: -112.99524}
+        - {x: -97.47533, y: -113.99524}
+        - {x: -97.47533, y: -168.99524}
+        - {x: -96.47533, y: -169.99524}
+        - {x: -96.47533, y: -217.99524}
+        - {x: -92.47533, y: -230.99524}
+        - {x: -86.47533, y: -240.99522}
+        - {x: -77.47533, y: -243.99524}
+        - {x: -57.475327, y: -248.99524}
+        - {x: -50.475323, y: -249.99524}
+        - {x: -46.475327, y: -248.99524}
+        - {x: -36.475327, y: -241.99522}
+        - {x: -29.475327, y: -224.99524}
+        - {x: -29.475327, y: -213.99522}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a35f715f39849598937404ad56e4dac
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      head-gladiator-helmet: 21300000
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

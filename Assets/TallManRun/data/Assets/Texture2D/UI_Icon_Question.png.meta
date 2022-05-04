@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: 34dad57a10c4db34eba2927b3a4fbfa0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: UI_Icon_Question
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 47
+  maxTextureSize: 128
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI_Icon_Question
+      rect:
+        serializedVersion: 2
+        x: 24.07612
+        y: 11.07612
+        width: 78.89713
+        height: 106.84776
+      alignment: 9
+      pivot: {x: 0.5060245, y: 0.49532044}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.524686, y: -28.5}
+        - {x: -18.524685, y: -13.5}
+        - {x: -8.524685, y: 14.500001}
+        - {x: -12.524685, y: 7.5}
+        - {x: -38.524685, y: 10.5}
+        - {x: -39.524685, y: 11.5}
+        - {x: -39.524685, y: 37.5}
+        - {x: -36.524685, y: 53.500004}
+        - {x: 39.475315, y: 53.500004}
+        - {x: 39.475315, y: -9.5}
+        - {x: 15.475316, y: -28.5}
+      - - {x: -12.524685, y: -53.499996}
+        - {x: -15.524685, y: -51.5}
+        - {x: -15.524685, y: -32.5}
+        - {x: -13.524685, y: -30.500002}
+        - {x: 14.475315, y: -30.500002}
+        - {x: 14.475315, y: -51.5}
+        - {x: 13.475315, y: -53.499996}
+      physicsShape:
+      - - {x: -15.524685, y: -30.499998}
+        - {x: -15.524685, y: -52.5}
+        - {x: -9.524684, y: -53.499996}
+        - {x: 13.475315, y: -53.499996}
+        - {x: 13.475315, y: -30.499998}
+      - - {x: -7.524685, y: 53.499996}
+        - {x: -19.524683, y: 51.5}
+        - {x: -35.524685, y: 42.499996}
+        - {x: -39.52468, y: 24.5}
+        - {x: -39.52468, y: 10.5}
+        - {x: -35.524685, y: 7.5}
+        - {x: -8.524685, y: 9.499999}
+        - {x: -1.5246849, y: 26.499998}
+        - {x: -5.524685, y: 4.4999995}
+        - {x: -16.524685, y: -12.5}
+        - {x: -14.524684, y: -24.5}
+        - {x: -12.524685, y: -26.5}
+        - {x: -4.5246844, y: -27.499998}
+        - {x: 15.475314, y: -27.499998}
+        - {x: 39.475315, y: 1.5}
+        - {x: 39.475315, y: 42.499996}
+        - {x: 22.475315, y: 53.499996}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1fdd417ff94ec49676af8cef7ce00b
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      UI_Icon_Question: 21300000
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
