@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Ray\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Ray\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Tall Man Run.-92850073.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Ray\Documents\Tall Man Run" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="CameraController.cs" t="Include" />
+        <e p="NewBehaviourScript.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="PlayerMovementControl.cs" t="Include" />
+          <e p="SimpleCameraController.cs" t="Include" />
+        </e>
+        <e p="TallManRun" t="Include">
+          <e p="data" t="Include">
+            <e p="Assets" t="Include">
+              <e p="Resources" t="Include">
+                <e p="BillingMode.json" t="Include" />
+                <e p="environment" t="Include">
+                  <e p="envshaders" t="Include">
+                    <e p="prototypegridcentermask.shader" t="Include" />
+                    <e p="prototypegridsprite.shader" t="Include" />
+                    <e p="skyboxproceduraldesaturated.shader" t="Include" />
+                  </e>
+                </e>
+                <e p="extracted" t="Include">
+                  <e p="AppIcon.txt" t="Include" />
+                </e>
+                <e p="LineBreaking Following Characters.txt" t="Include" />
+                <e p="LineBreaking Leading Characters.txt" t="Include" />
+                <e p="shaders" t="Include">
+                  <e p="firstlayeropaque.shader" t="Include" />
+                  <e p="secondlayer.shader" t="Include" />
+                  <e p="tmp_bitmap-custom-atlas.shader" t="Include" />
+                  <e p="tmp_bitmap-mobile.shader" t="Include" />
+                  <e p="tmp_bitmap.shader" t="Include" />
+                  <e p="tmp_sdf overlay.shader" t="Include" />
+                  <e p="tmp_sdf-mobile masking.shader" t="Include" />
+                  <e p="tmp_sdf-mobile overlay.shader" t="Include" />
+                  <e p="tmp_sdf-mobile.shader" t="Include" />
+                  <e p="tmp_sdf-surface-mobile.shader" t="Include" />
+                  <e p="tmp_sdf-surface.shader" t="Include" />
+                  <e p="tmp_sdf.shader" t="Include" />
+                  <e p="tmp_sprite.shader" t="Include" />
+                </e>
+                <e p="webview" t="Include">
+                  <e p="static.iap-ui.txt" t="Include" />
+                  <e p="static.privacy-ui.txt" t="Include" />
+                </e>
+              </e>
+              <e p="Shader" t="Include">
+                <e p="DepthMask.shader" t="Include" />
+                <e p="MatCapVertexPlain.shader" t="Include" />
+                <e p="ProBuilderStandard Vertex Color.shader" t="Include" />
+                <e p="ProBuilderUnlitVertexColor.shader" t="Include" />
+                <e p="ShapeFXParticlesAlpha Blended.shader" t="Include" />
+                <e p="Skybox Gradient.shader" t="Include" />
+                <e p="Toony Colors Pro 2ExamplesWaterWater WindWaker2.shader" t="Include" />
+                <e p="Toony Colors Pro 2Hybrid Shader.shader" t="Include" />
+              </e>
+            </e>
+            <e p="ProjectSettings" t="Include">
+              <e p="ProjectVersion.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Tall Man Run.sln" t="IncludeFlat" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
