@@ -20,17 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f612e66-6367-4474-aeb1-e3ef6a605331" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/YBotAniamtionController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/YBotAniamtionController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mixamo/YBot/ybot@Breathing Idle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mixamo/YBot/ybot@Breathing Idle.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mixamo/YBot/ybot@Crouched Walking.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mixamo/YBot/ybot@Crouched Walking.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mixamo/YBot/ybot@Crouching Idle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mixamo/YBot/ybot@Crouching Idle.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mixamo/YBot/ybot@Fast Run.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mixamo/YBot/ybot@Fast Run.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraController.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Mixamo/YBot/ybot@Happy Idle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mixamo/YBot/ybot@Happy Idle.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mixamo/YBot/ybot@Running.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mixamo/YBot/ybot@Running.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mixamo/YBot/ybot@Working On Device.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mixamo/YBot/ybot@Working On Device.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBehaviourScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBehaviourScript.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bone.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,15 +41,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/NewBehaviourScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Bone.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Bone.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" />
         <option value="$PROJECT_DIR$/Assets/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" />
       </list>
     </option>
   </component>
@@ -95,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651669086605</updated>
       <workItem from="1651669114759" duration="34000" />
-      <workItem from="1651727046466" duration="3135000" />
+      <workItem from="1651727046466" duration="8550000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1651669135598</created>
@@ -104,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651669135598</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implemented player's movement,&#10;Still a long way to go">
+      <created>1651735442067</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651735442068</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,16 +135,21 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="Implemented player's movement,&#10;Still a long way to go" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented player's movement,&#10;Still a long way to go" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1651669136937">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1651735444144">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1651669136937" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1651735444144" />
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1651727047370">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1651727047370" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1651746757660">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1651746757660" />
   </component>
 </project>

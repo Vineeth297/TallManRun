@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3215780069210389653}
   - component: {fileID: 2178035957909442160}
   - component: {fileID: 5964666131316239015}
-  - component: {fileID: 6449571567611671973}
   m_Layer: 0
   m_Name: Bone
   m_TagString: Untagged
@@ -26,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5530971694726537671}
-  m_LocalRotation: {x: -0.029324207, y: -0.0023955426, z: 0.08138517, w: 0.9962484}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.1975, y: 1.2487, z: -0.0375}
   m_LocalScale: {x: 0.1, y: 0.14580865, z: 0.1}
   m_ConstrainProportionsScale: 1
@@ -35,7 +34,7 @@ Transform:
   - {fileID: 4760656723827208467}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -3.327, y: -0.548, z: 9.356}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2178035957909442160
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -86,20 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &6449571567611671973
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5530971694726537671}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1001 &3676915740016004192
 PrefabInstance:
   m_ObjectHideFlags: 0
