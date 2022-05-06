@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class PlayerMovementControl : MonoBehaviour
 {
@@ -17,18 +18,24 @@ public class PlayerMovementControl : MonoBehaviour
 	private float _swipeSpeed = 5f;
 
 	public Transform lengthEffector;
-	public Transform hipBoneTransform;
-	public Transform spineBoneTransform;
-	public Transform spineParentTransform;
+	public Transform hipTransform;
+	public Transform spineTransform;
+	public Transform spineBoneParentTransform;
 	public GameObject bonePrefab;
 
 	private Animator _animator;
 	private static readonly int RunningHash = Animator.StringToHash("ToRun");
 
+	public GameObject scalingBone;
+
+	private RopeController _ropeController;
+	private bool _toGrowTall;
+
 	private void Start()
 	{
-	//	lengthEffector.position = new Vector3(lengthEffector.position.x,lengthEffector.position.y + 1.02f, lengthEffector.position.z);
+		lengthEffector.position = new Vector3(lengthEffector.position.x,lengthEffector.position.y + 1.3f, lengthEffector.position.z);
 		_animator = GetComponent<Animator>();
+		_ropeController = GetComponent<RopeController>();
 	}
 
 	private void Update()
@@ -51,6 +58,8 @@ public class PlayerMovementControl : MonoBehaviour
 	#endif
 		
 		PlayerMovement();
+		if(_toGrowTall)
+			_ropeController.UpdateRope();
 		
 	}
 
@@ -61,6 +70,8 @@ public class PlayerMovementControl : MonoBehaviour
 			_animator.SetBool(RunningHash, true);
 			transform.Translate(
 				(Vector3.forward * movementSpeed + new Vector3(xForce * xSpeed, 0f, 0f)) * Time.deltaTime, Space.World);
+			lengthEffector.transform.position = new Vector3(lengthEffector.position.x,
+				lengthEffector.position.y,transform.position.z);
 		}
 		else
 		{
@@ -90,21 +101,28 @@ public class PlayerMovementControl : MonoBehaviour
 		{
 			//become tall
 			lengthEffector.position += Vector3.up * 3f;
-			//spineBoneTransform.position = lengthEffector.position;
-			MakePlayerTall();
+			//spineTransform.position = lengthEffector.position;
+			//MakePlayerTall();
+			_toGrowTall = true;
 			other.enabled = false;
 		}
 	}
 
 	private void MakePlayerTall()
 	{
-		var distance = (int)spineBoneTransform.position.y - hipBoneTransform.position.y;
-		for (var i = 0; i < distance; i++)
+		var distance = spineTransform.position.y - hipTransform.position.y;
+		var transformLocalScale = scalingBone.transform.localScale;
+		transformLocalScale.y *= distance;
+		scalingBone.transform.localScale = transformLocalScale;
+		return;
+
+
+		/*for (var i = 0; i < distance; i++)
 		{
 			var spawnedBone = Instantiate(bonePrefab);
-			spawnedBone.transform.parent = spineParentTransform;
-			spawnedBone.transform.position = hipBoneTransform.position + Vector3.up * i;
-		}
+			spawnedBone.transform.parent = spineBoneParentTransform;
+			spawnedBone.transform.position = spineBoneParentTransform.position - Vector3.up * i;
+		}*/
 		
 	}
 }

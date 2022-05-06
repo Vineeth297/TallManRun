@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ExitingIncline
+  - EndSequenceFall
+  - PlayerReachedCheckerBoard
+  - EnteringIncline
+  - EndSequenceStartFight
+  - TestGate
   layers:
   - Default
   - TransparentFX
