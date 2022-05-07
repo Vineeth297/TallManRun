@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -20,8 +21,6 @@ public class PlayerMovementControl : MonoBehaviour
 	public Transform lengthEffector;
 	public Transform hipTransform;
 	public Transform spineTransform;
-	public Transform spineBoneParentTransform;
-	public GameObject bonePrefab;
 
 	private Animator _animator;
 	private static readonly int RunningHash = Animator.StringToHash("ToRun");
@@ -31,11 +30,30 @@ public class PlayerMovementControl : MonoBehaviour
 	private RopeController _ropeController;
 	private bool _toGrowTall;
 
+	public List<Transform> startingPositions;
+	public List<Transform> endingPositions;
+	public List<CylinderGeneration> cylinderList;
+	public GameObject spherePrefab;
+	public List<Transform> spheres;
+
+	private CylinderGeneration _spineCylinder;
 	private void Start()
 	{
-		lengthEffector.position = new Vector3(lengthEffector.position.x,lengthEffector.position.y + 1.3f, lengthEffector.position.z);
+		//lengthEffector.position = new Vector3(lengthEffector.position.x,lengthEffector.position.y + 1.3f, lengthEffector.position.z);
 		_animator = GetComponent<Animator>();
 		_ropeController = GetComponent<RopeController>();
+		spheres = new List<Transform>();
+		//GenerateAllTheCylinders
+		var maxIterations = endingPositions.Count;
+		for (var i = 0; i < maxIterations; i++)
+		{
+			print("1");
+			var sphere = Instantiate(spherePrefab, startingPositions[i]);
+			spheres.Add(sphere.transform);
+			_ropeController.UpdateRope(startingPositions[i],endingPositions[i],cylinderList[i]);
+		}
+
+		_spineCylinder = scalingBone.GetComponent<CylinderGeneration>();
 	}
 
 	private void Update()
@@ -58,9 +76,11 @@ public class PlayerMovementControl : MonoBehaviour
 	#endif
 		
 		PlayerMovement();
-		if(_toGrowTall)
-			_ropeController.UpdateRope();
-		
+		if (_toGrowTall)
+		{
+			_ropeController.UpdateRope(hipTransform.transform,spineTransform.transform,_spineCylinder);
+			print("intheloop");
+		}
 	}
 
 	private void PlayerMovement()
@@ -97,32 +117,43 @@ public class PlayerMovementControl : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
-		if (other.CompareTag("TestGate"))
+		if (other.CompareTag("TallGate"))
 		{
-			//become tall
-			lengthEffector.position += Vector3.up * 3f;
-			//spineTransform.position = lengthEffector.position;
-			//MakePlayerTall();
-			_toGrowTall = true;
-			other.enabled = false;
+			MakeThePlayerTall();
 		}
+		else if (other.CompareTag("BuffGate"))
+		{
+			BuffThePlayer();
+		}
+		other.enabled = false;
 	}
 
-	private void MakePlayerTall()
+	private void MakeThePlayerTall()
 	{
-		var distance = spineTransform.position.y - hipTransform.position.y;
-		var transformLocalScale = scalingBone.transform.localScale;
-		transformLocalScale.y *= distance;
-		scalingBone.transform.localScale = transformLocalScale;
-		return;
-
-
-		/*for (var i = 0; i < distance; i++)
+		//lengthEffector.position += Vector3.up * 3f;
+		MoveTheTorsoUp();
+		_toGrowTall = true;
+	}
+	private void BuffThePlayer()
+	{
+		for (var i = 0; i < startingPositions.Count; i++)
 		{
-			var spawnedBone = Instantiate(bonePrefab);
-			spawnedBone.transform.parent = spineBoneParentTransform;
-			spawnedBone.transform.position = spineBoneParentTransform.position - Vector3.up * i;
-		}*/
-		
+			var cylinderInitialScale = cylinderList[i].transform.localScale;
+			var sphereInitialScale = spheres[i].transform.localScale;
+			// cylinderList[i].gameObject.transform.localScale = cylinderInitialScale + new Vector3(3.5f,3.5f,0);
+			cylinderList[i].gameObject.transform.DOScale(cylinderInitialScale + new Vector3(2f, 2f, 0), 2f);
+			spheres[i].transform.DOScale(sphereInitialScale + Vector3.one * 2f, 2f);
+			// spheres[i].localScale = sphereInitialScale + Vector3.one * 3.5f;
+		}
+
+		var spineCylinder = _spineCylinder.transform.localScale;
+		// _spineCylinder.transform.localScale = new Vector3( 3.5f, 3.5f,0) + spineCylinder;
+		_spineCylinder.transform.DOScale(new Vector3( 2f, 2f,0) + spineCylinder, 2f);;
+	}
+
+	private void MoveTheTorsoUp()
+	{
+		lengthEffector.transform.DOMoveY(lengthEffector.position.y + 3f, 2f);
+		_toGrowTall = false;
 	}
 }

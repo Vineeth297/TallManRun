@@ -10,6 +10,8 @@ TagManager:
   - EnteringIncline
   - EndSequenceStartFight
   - TestGate
+  - TallGate
+  - BuffGate
   layers:
   - Default
   - TransparentFX

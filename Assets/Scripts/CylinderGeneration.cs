@@ -5,8 +5,8 @@ using UnityEngine;
 public class CylinderGeneration : MonoBehaviour
 {
 	[Range(.01f, 1), SerializeField] private float radiusInner;
-	[Range(.01f, 1), SerializeField] private float thickness;
 	[Range(3, 16), SerializeField] private int angularSegmentsCount = 3;
+	[SerializeField] private float thickness;
 
 	private float _skewAmount;
 

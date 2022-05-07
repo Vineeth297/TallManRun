@@ -20,10 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f612e66-6367-4474-aeb1-e3ef6a605331" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Breathing Idle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Breathing Idle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Running.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Running.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Warrior Idle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Warrior Idle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Mixamo/ybot@Warrior Idle.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Mixamo/ybot@Warrior Idle.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/YBotAniamtionController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/YBotAniamtionController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Cylinder.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Cylinder.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Ground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mixamo/YBot/Breathing Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mixamo/YBot/Breathing Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mixamo/YBot/Running.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mixamo/YBot/Running.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player_StickMan.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player_StickMan.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CylinderGeneration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CylinderGeneration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RopeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RopeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,11 +55,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CylinderGeneration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Materials/Bone2.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Bone.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/TagManager.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RopeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Settings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -48,16 +69,21 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CylinderGeneration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RopeController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="28hW1rDvNCuQ1fDvMz7MwkQQjG7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -95,7 +121,9 @@
       <updated>1651669086605</updated>
       <workItem from="1651669114759" duration="34000" />
       <workItem from="1651727046466" duration="8852000" />
-      <workItem from="1651814242756" duration="8611000" />
+      <workItem from="1651814242756" duration="8706000" />
+      <workItem from="1651903246878" duration="9676000" />
+      <workItem from="1651921097129" duration="5534000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1651669135598</created>
@@ -118,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651756556391</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit on 06.05.22&#10;Still need to work on scaling and growing tall&#10;The current approach will give problems in the future...Need to change the approach">
+      <created>1651844317234</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651844317234</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,17 +174,19 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="." />
     <MESSAGE value="Implemented player's movement,&#10;Still a long way to go" />
     <MESSAGE value="Commit on 05.05.22" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit on 05.05.22" />
+    <MESSAGE value="Commit on 06.05.22&#10;Still need to work on scaling and growing tall&#10;The current approach will give problems in the future...Need to change the approach" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit on 06.05.22&#10;Still need to work on scaling and growing tall&#10;The current approach will give problems in the future...Need to change the approach" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1651756560615">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1651844319165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1651756560615" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1651844319165" />
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1651727047370">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
