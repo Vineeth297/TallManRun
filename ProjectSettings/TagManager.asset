@@ -12,6 +12,8 @@ TagManager:
   - TestGate
   - TallGate
   - BuffGate
+  - ShortGate
+  - JumpPlatform
   layers:
   - Default
   - TransparentFX

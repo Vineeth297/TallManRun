@@ -6,6 +6,8 @@
     <e p="C:\Users\Ray\Documents\Tall Man Run" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Barracade.cs" t="Include" />
+        <e p="BodyChangeGate.cs" t="Include" />
         <e p="BOXOPHOBIC" t="Include">
           <e p="BOXOPHOBIC" t="Include">
             <e p="Polyverse Skies" t="Include">
@@ -122,6 +124,7 @@
           </e>
           <e p="readme.txt" t="Include" />
         </e>
+        <e p="GameManager.cs" t="Include" />
         <e p="JMO Assets" t="Include">
           <e p="Toony Colors Pro" t="Include">
             <e p="!ToonyColorsPro Readme.txt" t="Include" />
@@ -406,7 +409,9 @@
             </e>
           </e>
         </e>
+        <e p="JumpPlatform.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="BodyShapeController.cs" t="Include" />
           <e p="CameraController.cs" t="Include" />
           <e p="CylinderGeneration.cs" t="Include" />
           <e p="NewBehaviourScript.cs" t="Include" />

@@ -1,14 +1,13 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 public class PlayerMovementControl : MonoBehaviour
 {
+	public static PlayerMovementControl Instance;
+	
 	public float movementSpeed;
 	public float xSpeed;
 	public float xForce;
@@ -29,29 +28,32 @@ public class PlayerMovementControl : MonoBehaviour
 
 	private RopeController _ropeController;
 	private bool _toGrowTall;
+	private bool _toShrink;
 
 	public List<Transform> startingPositions;
 	public List<Transform> endingPositions;
 	public List<CylinderGeneration> cylinderList;
 	public GameObject spherePrefab;
 	public List<Transform> spheres;
-
+	
 	private CylinderGeneration _spineCylinder;
+
+	private void Awake()
+	{
+		if (Instance)
+			Destroy(gameObject);
+		else
+			Instance = this;
+	}
+
 	private void Start()
 	{
-		//lengthEffector.position = new Vector3(lengthEffector.position.x,lengthEffector.position.y + 1.3f, lengthEffector.position.z);
+		//lengthEffector.position = new Vector3(lengthEffector.position.x,lengthEffector.position.y + 1.1f, lengthEffector.position.z);
 		_animator = GetComponent<Animator>();
 		_ropeController = GetComponent<RopeController>();
 		spheres = new List<Transform>();
 		//GenerateAllTheCylinders
-		var maxIterations = endingPositions.Count;
-		for (var i = 0; i < maxIterations; i++)
-		{
-			print("1");
-			var sphere = Instantiate(spherePrefab, startingPositions[i]);
-			spheres.Add(sphere.transform);
-			_ropeController.UpdateRope(startingPositions[i],endingPositions[i],cylinderList[i]);
-		}
+		GenerateCylinders();
 
 		_spineCylinder = scalingBone.GetComponent<CylinderGeneration>();
 	}
@@ -79,8 +81,14 @@ public class PlayerMovementControl : MonoBehaviour
 		if (_toGrowTall)
 		{
 			_ropeController.UpdateRope(hipTransform.transform,spineTransform.transform,_spineCylinder);
-			print("intheloop");
 		}
+
+		if (_toShrink)
+		{
+			_ropeController.UpdateRope(hipTransform.transform,spineTransform.transform,_spineCylinder);
+
+		}
+			
 	}
 
 	private void PlayerMovement()
@@ -90,8 +98,8 @@ public class PlayerMovementControl : MonoBehaviour
 			_animator.SetBool(RunningHash, true);
 			transform.Translate(
 				(Vector3.forward * movementSpeed + new Vector3(xForce * xSpeed, 0f, 0f)) * Time.deltaTime, Space.World);
-			lengthEffector.transform.position = new Vector3(lengthEffector.position.x,
-				lengthEffector.position.y,transform.position.z);
+			/*lengthEffector.transform.Translate(
+				(Vector3.forward * movementSpeed + new Vector3(xForce * xSpeed, 0f, 0f)) * Time.deltaTime, Space.Self);  */
 		}
 		else
 		{
@@ -125,35 +133,82 @@ public class PlayerMovementControl : MonoBehaviour
 		{
 			BuffThePlayer();
 		}
+		else if (other.CompareTag("ShortGate"))
+		{
+			MakePlayerShort();
+		}
+		
 		other.enabled = false;
 	}
 
-	private void MakeThePlayerTall()
+	public void MakeThePlayerTall()
 	{
-		//lengthEffector.position += Vector3.up * 3f;
 		MoveTheTorsoUp();
 		_toGrowTall = true;
 	}
-	private void BuffThePlayer()
+
+	public void MakePlayerShort()
+	{
+		MoveTheTorsoDown();
+		_toGrowTall = false;
+		_toShrink = true;
+	}
+
+	public void BuffThePlayer()
 	{
 		for (var i = 0; i < startingPositions.Count; i++)
 		{
 			var cylinderInitialScale = cylinderList[i].transform.localScale;
 			var sphereInitialScale = spheres[i].transform.localScale;
-			// cylinderList[i].gameObject.transform.localScale = cylinderInitialScale + new Vector3(3.5f,3.5f,0);
 			cylinderList[i].gameObject.transform.DOScale(cylinderInitialScale + new Vector3(2f, 2f, 0), 2f);
 			spheres[i].transform.DOScale(sphereInitialScale + Vector3.one * 2f, 2f);
-			// spheres[i].localScale = sphereInitialScale + Vector3.one * 3.5f;
 		}
 
 		var spineCylinder = _spineCylinder.transform.localScale;
-		// _spineCylinder.transform.localScale = new Vector3( 3.5f, 3.5f,0) + spineCylinder;
-		_spineCylinder.transform.DOScale(new Vector3( 2f, 2f,0) + spineCylinder, 2f);;
+		_spineCylinder.transform.DOScale(new Vector3( 2f, 2f,0) + spineCylinder, 2f);
+	}
+
+	public void DeBuffThePlayer()
+	{
+		for (var i = 0; i < startingPositions.Count; i++)
+		{
+			var cylinderInitialScale = cylinderList[i].transform.localScale;
+			var sphereInitialScale = spheres[i].transform.localScale;
+			cylinderList[i].gameObject.transform.DOScale(cylinderInitialScale - new Vector3(1.25f, 1.25f, 0), 2f);
+			spheres[i].transform.DOScale(sphereInitialScale - Vector3.one * 1.25f, 2f);
+		}
+
+		var spineCylinder = _spineCylinder.transform.localScale;
+		_spineCylinder.transform.DOScale(spineCylinder - new Vector3( 1.25f, 1.25f,0), 2f);
+	}
+
+	public void ShrinkThePlayer()
+	{
+		DeBuffThePlayer();
+		ShrinkThePlayer();
 	}
 
 	private void MoveTheTorsoUp()
 	{
-		lengthEffector.transform.DOMoveY(lengthEffector.position.y + 3f, 2f);
+		lengthEffector.transform.DOMoveY(lengthEffector.position.y + 3f, 2f).SetEase(Ease.OutExpo);
 		_toGrowTall = false;
+	}
+
+	private void MoveTheTorsoDown()
+	{
+		lengthEffector.transform.DOMoveY(lengthEffector.position.y - 1.5f, 2f).SetEase(Ease.OutExpo);
+		_toShrink = false;
+	}
+
+	private void GenerateCylinders()
+	{
+		var maxIterations = startingPositions.Count;
+		for (var i = 0; i < maxIterations; i++)
+		{
+			var sphere = Instantiate(spherePrefab, startingPositions[i]);
+			spheres.Add(sphere.transform);
+			_ropeController.UpdateRope(startingPositions[i], endingPositions[i], cylinderList[i]);
+			print(i);
+		}
 	}
 }
