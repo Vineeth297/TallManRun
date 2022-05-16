@@ -204,14 +204,14 @@ public class PlayerMovementControl : MonoBehaviour
 			return;
 		}
 		
-		_spineCylinder.transform.DOScale(spineCylinder - new Vector3( buffValue, buffValue,0), 1f);
+		_spineCylinder.transform.DOScale(spineCylinder - new Vector3( buffValue, buffValue,0), 0.7f);
 		
 		for (var i = 0; i < cylinderList.Count; i++)
 		{
 			var cylinderInitialScale = cylinderList[i].transform.localScale;
 			// if(_lastScalingCylinderTweens[i].IsActive()) _lastScalingCylinderTweens[i].Kill();
 			// _lastScalingCylinderTweens[i] = 
-			cylinderList[i].transform.DOScale(cylinderInitialScale - new Vector3(buffValue, buffValue, 0), 1f);
+			cylinderList[i].transform.DOScale(cylinderInitialScale - new Vector3(buffValue, buffValue, 0), 0.7f);
 		}
 
 		for (var i = 0; i < spherePositions.Count; i++)
@@ -247,7 +247,7 @@ public class PlayerMovementControl : MonoBehaviour
 			return;
 		}
 		else
-			lengthEffector.transform.DOMoveY(lengthEffector.position.y - buffValue, 1f).SetEase(Ease.OutExpo);
+			lengthEffector.transform.DOMoveY(lengthEffector.position.y - buffValue, 0.7f).SetEase(Ease.OutExpo);
 		_toShrink = false;
 	}
 

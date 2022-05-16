@@ -20,26 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f612e66-6367-4474-aeb1-e3ef6a605331" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FinalJumpPlatform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Cylinder.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Cylinder.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Platforms/SprintingRamp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Platforms/SprintingRamp.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene 8.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene 8.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Barracade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Barracade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BodyChangeGate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BodyChangeGate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BossMech.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BossMech.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JumpPlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JumpPlatform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObstacleMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObstacleMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SprintTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SprintTrigger.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +38,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/+ 10.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JumpPlatform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CylinderGeneration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///PlayerMovementControl.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BodyChangeGate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/TagManager.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Obstacles/Barracade.prefab" root0="FORCE_HIGHLIGHTING" />
@@ -68,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Bone.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Barracade.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SprintTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GravityOn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObstacleMovement.cs" root0="FORCE_HIGHLIGHTING" />
@@ -109,9 +92,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FinalJumpStart.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JumpPlatform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SprintTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FinalJumpPlatform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" />
       </list>
     </option>
   </component>
@@ -171,7 +154,7 @@
       <workItem from="1652349403927" duration="8945000" />
       <workItem from="1652423313267" duration="14386000" />
       <workItem from="1652676776675" duration="692000" />
-      <workItem from="1652681819282" duration="21722000" />
+      <workItem from="1652681819282" duration="22157000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1651669135598</created>
@@ -229,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652696679245</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Monilithic Code so far">
+      <created>1652708582735</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1652708582769</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +249,8 @@
     <MESSAGE value="Commit on 07.05.22" />
     <MESSAGE value="Commit on 09.05.22&#10;Need to smooth out the player's spine&#10;and much more" />
     <MESSAGE value="Just  noraml commit to begin next changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Just  noraml commit to begin next changes" />
+    <MESSAGE value="Monilithic Code so far" />
+    <option name="LAST_COMMIT_MESSAGE" value="Monilithic Code so far" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1652696681143">
