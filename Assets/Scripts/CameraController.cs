@@ -8,7 +8,8 @@ public class CameraController : MonoBehaviour
 {
 	public Transform player;
 	private Vector3 _playersLastPosition;
-	private float _toMoveDistance;
+	private float _toMoveDistanceInZ;
+	private float _toMoveDistanceInY;
 
 	private void Start()
 	{
@@ -16,16 +17,18 @@ public class CameraController : MonoBehaviour
 	}
 
 	// Update is called once per frame
-	private void FixedUpdate()
+	private void LateUpdate()
 	{
-		_toMoveDistance = player.transform.position.z - _playersLastPosition.z;
+		_toMoveDistanceInZ = player.transform.position.z - _playersLastPosition.z;
+		_toMoveDistanceInY = player.transform.position.y - _playersLastPosition.y;
 
-		if (!(_toMoveDistance > 0f)) return;
+		if (!(_toMoveDistanceInZ > 0f)) return;
 
 		var moveToPosition = transform.position;
-		moveToPosition = new Vector3(moveToPosition.x,moveToPosition.y ,moveToPosition.z + _toMoveDistance);
+		moveToPosition = new Vector3(moveToPosition.x,moveToPosition.y + _toMoveDistanceInY,moveToPosition.z + _toMoveDistanceInZ);
+		
 		transform.position = moveToPosition;
-
+		
 		_playersLastPosition = player.transform.position;
 	}
 }

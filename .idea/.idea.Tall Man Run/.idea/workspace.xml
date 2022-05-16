@@ -20,32 +20,414 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f612e66-6367-4474-aeb1-e3ef6a605331" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Barracade.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BodyChangeGate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GameManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/JumpPlatform.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/GateBar.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/GateBar.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/JumpPlatform.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/JumpPlatform.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/+ 10.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/+ 10.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Head.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Head.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BodyShapeController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Texture2D/Materials/multiplier-arrow-taller.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Texture2D/Materials/multiplier-arrow-taller.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/UI/FailPanel.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/UI/FailPanel.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/UI/WinPanel.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/UI/WinPanel.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/UI/failPanel.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/UI/failPanel.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/UI/winPanel.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/UI/winPanel.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/BossAnimationController.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/BossAnimationController.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/Confetti Gun 01.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/Confetti Gun 01.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/boss-hit-v1.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/boss-hit-v1.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/bubble_effect_02.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/bubble_effect_02.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/bubble_effect_04.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/bubble_effect_04.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/click-blip-SBA-300109138.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/click-blip-SBA-300109138.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/click-hollow-SBA-300149902.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/click-hollow-SBA-300149902.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/click-synth-blip-delay-SBA-300091401.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/click-synth-blip-delay-SBA-300091401.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/coin_bag_ring_gemstone_item_01.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/coin_bag_ring_gemstone_item_01.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/edited-ding-1.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/edited-ding-1.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/energetic-crowds---cheer-yeah-happy-reaction-male by boom-library Artlist.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/energetic-crowds---cheer-yeah-happy-reaction-male by boom-library Artlist.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/explosion_large_03.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/explosion_large_03.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/fizz-1.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/fizz-1.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/flow---moderate-water-splash-short-and-punchy by inspectorj Artlist.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/flow---moderate-water-splash-short-and-punchy by inspectorj Artlist.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/flow---water-splash-single-short by inspectorj Artlist.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/flow---water-splash-single-short by inspectorj Artlist.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/game-modern-damage-or-hit-sound-SBA-300463018.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/game-modern-damage-or-hit-sound-SBA-300463018.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/human-reactions---man-falling-down-screaming by julien-matthey Artlist.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/human-reactions---man-falling-down-screaming by julien-matthey Artlist.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/modern-ui---tiny-ding by ni-sound Artlist.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/modern-ui---tiny-ding by ni-sound Artlist.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/old-cash-register-cha-ching-money by db-studios Artlist.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/old-cash-register-cha-ching-money by db-studios Artlist.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/punch_grit_wet_impact_01.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/punch_grit_wet_impact_01.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/punch_grit_wet_impact_02.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/punch_grit_wet_impact_02.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/punch_grit_wet_impact_03.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/punch_grit_wet_impact_03.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/punch_grit_wet_impact_04.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/punch_grit_wet_impact_04.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/punch_slap_whack_hit_01.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/punch_slap_whack_hit_01.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/punch_slap_whack_hit_02.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/punch_slap_whack_hit_02.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/punch_slap_whack_hit_03.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/punch_slap_whack_hit_03.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/punch_slap_whack_hit_04.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/punch_slap_whack_hit_04.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/rise-v2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/rise-v2.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/sci-fi_power_up_05.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/sci-fi_power_up_05.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/spray_bottle_05.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/spray_bottle_05.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/trampoline-v2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/trampoline-v2.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/ui_menu_button_click_19.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/ui_menu_button_click_19.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/ui_menu_button_scroll_back_07.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/ui_menu_button_scroll_back_07.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/ui_menu_popup_message_01.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/ui_menu_popup_message_01.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/ui_menu_popup_message_reward_01.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/ui_menu_popup_message_reward_01.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/weapon_fun_pea_shooter_02.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/weapon_fun_pea_shooter_02.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/weapon_fun_pea_shooter_03.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AudioClip/weapon_fun_pea_shooter_03.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/BOXOPHOBIC/BOXOPHOBIC/Polyverse Skies/Core/Presets/Sky 08.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/BOXOPHOBIC/BOXOPHOBIC/Polyverse Skies/Core/Presets/Sky 08.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Collector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Collector.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Diamond.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Diamond.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GravityOn.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/DiamondNumber.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/DiamondNumber.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/LevelNumber.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/LevelNumber.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Boss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Boss/BossBones.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Boss/BossBones.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Boss/BossJoints.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Boss/BossJoints.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Boss/BossTex.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Boss/BossTex.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 10.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 10.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 11.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 11.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 12.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 12.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 13.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 13.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 14.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 14.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 15.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 15.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 3.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 4.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 4.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 5.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 5.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 6.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 6.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 7.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 7.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 8.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 8.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 9.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient 9.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/GradientColor/Gradient.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Mixamo/Boss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Mixamo/Boss/Idle@Knocked Out.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Mixamo/Boss/Idle@Knocked Out.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Mixamo/Boss/Idle@Victory.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Mixamo/Boss/Idle@Victory.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Mixamo/Boss/Idle@Warming Up.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Mixamo/Boss/Idle@Warming Up.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Mixamo/Boss/Knocked Out.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Mixamo/Boss/Knocked Out.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Mixamo/Boss/Victory.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Mixamo/Boss/Victory.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Mixamo/Boss/Warming Up.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Mixamo/Boss/Warming Up.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Boss.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Boss.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/DiamondPickUp.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/DiamondPickUp.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/FailPanel.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/FailPanel.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/WinPanel.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/WinPanel.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/Group 58.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/Group 58.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/Group 67.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/Group 67.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/Group 70.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/Group 70.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/Instagram Story – 30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/Instagram Story – 30.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/RETRY.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/RETRY.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/Rectangle 79.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/Rectangle 79.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/YOU ARE DUMB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/YOU ARE DUMB.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/loudly-crying-face_1f62d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/loudly-crying-face_1f62d.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/round rail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/lose/round rail.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/Group 58.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/Group 58.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/Group 64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/Group 64.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/Group 65.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/Group 65.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/Group 66.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/Group 66.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/Group 71.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/Group 71.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/Instagram Story – 29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/Instagram Story – 29.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/NO,THANKS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/NO,THANKS.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/Polygon 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/Polygon 1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/Rectangle 96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/Rectangle 96.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/YOU ARE SMART.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/YOU ARE SMART.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/round rail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/round rail.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/smiling-face-with-sunglasses_1f60e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/winlose panels/win/smiling-face-with-sunglasses_1f60e.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Bounce.physicMaterial" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Bounce.physicMaterial.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene 1.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene 1.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene 2.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene 2.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene 8.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene 8.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Barracade.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Barracade.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BodyChangeGate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BodyChangeGate.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BossMech.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BossMech.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Diamond.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Diamond/source.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Diamond/source/Diamond.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Diamond/source/Diamond.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Diamond/source/SimpleDia.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Diamond/source/SimpleDia.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Diamond/textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Diamond/textures/internal_ground_ao_texture.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Diamond/textures/internal_ground_ao_texture.jpeg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FinalJumpStart.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FinalJumpStart.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IObstacleDamage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JumpPlatform.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JumpPlatform.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacle.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ObstacleMovement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ObstacleMovement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ObstacleRotation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ObstacleRotation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SprintTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SprintTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Texture2D/Materials/path-center-pattern-01.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Texture2D/Materials/path-center-pattern-01.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/Emojies.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/Emojies/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/Emojies/13.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/Emojies/18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/Emojies/18.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi/#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi/#1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi/#3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi/#3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi/Layer 6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi/Layer 6.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi/Lose _.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi/Lose _.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi/Retry2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi/Retry2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi/Win_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi/Win_.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi/calimvideo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi/calimvideo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Texture2D/WinUi/next.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Group 31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Group 31.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Restart Img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Restart Img.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/Pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/Pink.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/Rainbow2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/Rainbow2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/Santa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/Santa.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/Spiderman.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/Spiderman.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/Thief.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/Thief.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/bee.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/bee.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/mainChar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/mainChar.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/newSuperHero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/newSuperHero.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/robot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/robot.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/skeleton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/textures/skeleton.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TallManRun_BurstDebugInformation_DoNotShip/tempburstlibs/armeabi-v7a/lib_burst_generated.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tall Man Run/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Barracade.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Barracade.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BodyChangeGate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BodyChangeGate.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JumpPlatform.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JumpPlatform.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Material/Titillium-Black SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Titillium-Black SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Polygon Arsenal/Materials/PolyGradientVertical.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Polygon Arsenal/Materials/PolyGradientVertical.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Ground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/JumpPlatform.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/JumpPlatform.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Skybox 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Skybox 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Skybox_Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Skybox_Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/JumpStart.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/JumpStart.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AnimationClip/BasicMotions@Fall01.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AnimationClip/BasicMotions@Fall01.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AnimationClip/MOB1_Stand_Relaxed_Fgt_v3_IPC.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AnimationClip/MOB1_Stand_Relaxed_Fgt_v3_IPC.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AnimationClip/male_act_jump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AnimationClip/male_act_jump.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AnimationClip/male_emotion_happy.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AnimationClip/male_emotion_happy.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AnimatorController/anim.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AnimatorController/anim.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/barricade-safety-stripes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/barricade-safety-stripes.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/barricade-supports.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/barricade-supports.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/barricade-white.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/barricade-white.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/barricade-yellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/barricade-yellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/Confetti Gun 01.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/Confetti Gun 01.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/boss-hit-v1.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/boss-hit-v1.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/bubble_effect_02.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/bubble_effect_02.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/bubble_effect_04.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/bubble_effect_04.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/click-blip-SBA-300109138.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/click-blip-SBA-300109138.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/click-hollow-SBA-300149902.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/click-hollow-SBA-300149902.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/click-synth-blip-delay-SBA-300091401.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/click-synth-blip-delay-SBA-300091401.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/coin_bag_ring_gemstone_item_01.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/coin_bag_ring_gemstone_item_01.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/edited-ding-1.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/edited-ding-1.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/energetic-crowds---cheer-yeah-happy-reaction-male by boom-library Artlist.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/energetic-crowds---cheer-yeah-happy-reaction-male by boom-library Artlist.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/explosion_large_03.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/explosion_large_03.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/fizz-1.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/fizz-1.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/flow---moderate-water-splash-short-and-punchy by inspectorj Artlist.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/flow---moderate-water-splash-short-and-punchy by inspectorj Artlist.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/flow---water-splash-single-short by inspectorj Artlist.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/flow---water-splash-single-short by inspectorj Artlist.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/game-modern-damage-or-hit-sound-SBA-300463018.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/game-modern-damage-or-hit-sound-SBA-300463018.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/human-reactions---man-falling-down-screaming by julien-matthey Artlist.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/human-reactions---man-falling-down-screaming by julien-matthey Artlist.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/modern-ui---tiny-ding by ni-sound Artlist.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/modern-ui---tiny-ding by ni-sound Artlist.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/old-cash-register-cha-ching-money by db-studios Artlist.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/old-cash-register-cha-ching-money by db-studios Artlist.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/punch_grit_wet_impact_01.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/punch_grit_wet_impact_01.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/punch_grit_wet_impact_02.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/punch_grit_wet_impact_02.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/punch_grit_wet_impact_03.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/punch_grit_wet_impact_03.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/punch_grit_wet_impact_04.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/punch_grit_wet_impact_04.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/punch_slap_whack_hit_01.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/punch_slap_whack_hit_01.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/punch_slap_whack_hit_02.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/punch_slap_whack_hit_02.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/punch_slap_whack_hit_03.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/punch_slap_whack_hit_03.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/punch_slap_whack_hit_04.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/punch_slap_whack_hit_04.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/rise-v2.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/rise-v2.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/sci-fi_power_up_05.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/sci-fi_power_up_05.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/spray_bottle_05.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/spray_bottle_05.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/trampoline-v2.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/trampoline-v2.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/ui_menu_button_click_19.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/ui_menu_button_click_19.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/ui_menu_button_scroll_back_07.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/ui_menu_button_scroll_back_07.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/ui_menu_popup_message_01.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/ui_menu_popup_message_01.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/ui_menu_popup_message_reward_01.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/ui_menu_popup_message_reward_01.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/weapon_fun_pea_shooter_02.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/weapon_fun_pea_shooter_02.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/weapon_fun_pea_shooter_03.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/AudioClip/weapon_fun_pea_shooter_03.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/BossKickContactSphere.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/BossKickContactSphere.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/Character Material Black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/Character Material Black.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/Character Material White.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/Character Material White.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/path-side.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/path-side.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/trampoline-black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/trampoline-black.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/trampoline-red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Material/trampoline-red.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Mesh/Humanoid.100.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Mesh/Humanoid.100.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/PrefabInstance/BossSequence.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/PrefabInstance/BossSequence.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/PrefabInstance/bot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/PrefabInstance/bot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Texture2D/path-center-pattern-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TallManRun/data/Assets/Texture2D/path-center-pattern-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,18 +439,28 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FinalJumpStart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Materials/Bone2.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Bone.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RopeController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Barracade.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/BodyChangeGate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Barracade.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BodyShapeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/+ 10.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SprintTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GravityOn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObstacleMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IObstacleDamage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JumpPlatform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Diamond.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CylinderGeneration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BodyChangeGate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/TagManager.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/JumpPlatform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Settings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimpleCameraController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -78,12 +470,32 @@
         <option value="$PROJECT_DIR$/Assets/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CylinderGeneration.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RopeController.cs" />
-        <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BodyShapeController.cs" />
         <option value="$PROJECT_DIR$/Assets/BodyChangeGate.cs" />
         <option value="$PROJECT_DIR$/Assets/JumpPlatform.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Barracade.cs" />
+        <option value="$PROJECT_DIR$/Assets/Obstcle.cs" />
+        <option value="$PROJECT_DIR$/Assets/ObstacleMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/ObstacleRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/BossMech.cs" />
+        <option value="$PROJECT_DIR$/Assets/Obstacle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BodyChangeGate.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/SprintTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/FinalJumpStart.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SprintTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Diamond.cs" />
+        <option value="$PROJECT_DIR$/Assets/GravityOn.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JumpPlatform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IObstacleDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObstacleMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Barracade.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FinalJumpStart.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovementControl.cs" />
       </list>
     </option>
   </component>
@@ -137,7 +549,13 @@
       <workItem from="1651814242756" duration="8706000" />
       <workItem from="1651903246878" duration="9676000" />
       <workItem from="1651921097129" duration="5618000" />
-      <workItem from="1652074003319" duration="18379000" />
+      <workItem from="1652074003319" duration="18446000" />
+      <workItem from="1652160902325" duration="9473000" />
+      <workItem from="1652250315665" duration="1018000" />
+      <workItem from="1652349403927" duration="8945000" />
+      <workItem from="1652423313267" duration="14386000" />
+      <workItem from="1652676776675" duration="692000" />
+      <workItem from="1652681819282" duration="11743000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1651669135598</created>
@@ -181,7 +599,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651930437076</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Commit on 09.05.22&#10;Need to smooth out the player's spine&#10;and much more">
+      <created>1652102418331</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652102418331</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,13 +634,18 @@
     <MESSAGE value="Commit on 05.05.22" />
     <MESSAGE value="Commit on 06.05.22&#10;Still need to work on scaling and growing tall&#10;The current approach will give problems in the future...Need to change the approach" />
     <MESSAGE value="Commit on 07.05.22" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit on 07.05.22" />
+    <MESSAGE value="Commit on 09.05.22&#10;Need to smooth out the player's spine&#10;and much more" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit on 09.05.22&#10;Need to smooth out the player's spine&#10;and much more" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1651930441526">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1652102421603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1651930441526" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1652102421603" />
+    <state x="446" y="105" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1652694213901">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="446" y="105" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1652694213901" />
     <state x="768" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1651930421410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

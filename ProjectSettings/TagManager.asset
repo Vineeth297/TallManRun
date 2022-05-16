@@ -14,6 +14,8 @@ TagManager:
   - BuffGate
   - ShortGate
   - JumpPlatform
+  - SprintTrigger
+  - Collector
   layers:
   - Default
   - TransparentFX

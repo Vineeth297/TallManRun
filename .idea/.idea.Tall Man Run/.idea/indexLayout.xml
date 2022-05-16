@@ -69,7 +69,10 @@
       <Path>.idea</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
+      <Path>TallManRun_BurstDebugInformation_DoNotShip</Path>
       <Path>Temp</Path>
+      <Path>Test1_BurstDebugInformation_DoNotShip</Path>
+      <Path>Test_BurstDebugInformation_DoNotShip</Path>
       <Path>UserSettings</Path>
       <Path>obj</Path>
     </explicitExcludes>

@@ -10,6 +10,7 @@ Material:
   m_Name: Skybox 1
   m_Shader: {fileID: 4800000, guid: 6fc9318f5193c094c98c0d450cd61e3b, type: 3}
   m_ShaderKeywords: _BACKGROUNDMODE_COMBINED _ENABLECLOUDSROTATION_ON _ENABLECLOUDS_ON
+    _ENABLEPATTERNOVERLAY_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -32,7 +33,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _PatternCubemap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 8900000, guid: 5e08451c0e8bb7a4f9ca20067695cda7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _StarsCubemap:
@@ -61,7 +62,7 @@ Material:
     - _EnableClouds: 1
     - _EnableCloudsRotation: 1
     - _EnableMoon: 0
-    - _EnablePatternOverlay: 0
+    - _EnablePatternOverlay: 1
     - _EnableStars: 0
     - _EnableStarsRotation: 0
     - _EnableStarsTwinkling: 0
@@ -76,7 +77,7 @@ Material:
     - _MoonIntensity: 1
     - _MoonSize: 0.5
     - _PatternCat: 1
-    - _PatternContrast: 0.5
+    - _PatternContrast: 1
     - _StarsCat: 1
     - _StarsHeightMask: 0
     - _StarsIntensity: 2
@@ -95,9 +96,9 @@ Material:
     m_Colors:
     - _CloudsLightColor: {r: 1, g: 0.97559017, b: 0.9198113, a: 1}
     - _CloudsShadowColor: {r: 0.15419187, g: 0.53798515, b: 0.9339623, a: 1}
-    - _EquatorColor: {r: 0, g: 1, b: 0.8595505, a: 1}
-    - _GroundColor: {r: 0, g: 0.3137255, b: 0.6156863, a: 1}
+    - _EquatorColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GroundColor: {r: 1, g: 1, b: 1, a: 1}
     - _MoonColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SkyColor: {r: 0, g: 0.8381572, b: 1, a: 1}
+    - _SkyColor: {r: 0, g: 0.56326723, b: 1, a: 1}
     - _SunColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
