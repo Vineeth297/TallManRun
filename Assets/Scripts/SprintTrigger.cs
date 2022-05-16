@@ -18,10 +18,15 @@ public class SprintTrigger : MonoBehaviour
 	private void OnTriggerEnter(Collider other)
 	{
 		if (!other.CompareTag("Player")) return;
-		
+		PlayerMovementControl.Instance.isAtSprintingPhase = true;
 		print("Sprint");
 		PlayerMovementControl.Instance.PlaySprintAnimation();
-		_camera.transform.DOMove(cameraPosition.position, 1f);
+		if (PlayerMovementControl.ExistingSequence.IsActive())
+		{
+			
+			PlayerMovementControl.ExistingSequence.Kill(true);
+		}
+		_camera.transform.DOMove(cameraPosition.position , 1f);
 		_camera.transform.DORotate(new Vector3(10.657f, -16.413f, 0f), 1f);
 		PlayerMovementControl.Instance.toSprint = true;
 		PlayerMovementControl.Instance.xSpeed = 0f;

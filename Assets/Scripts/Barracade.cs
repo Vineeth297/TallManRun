@@ -31,7 +31,7 @@ public class Barracade : MonoBehaviour
 		//Fly away
 		//_rb.isKinematic = false;
 		AddForceAtAnAngle(forceToApply, angleOfForce);
-		
+		SoundManager.Instance.PlaySound(SoundManager.Instance.obstacleHitSound);
 		PlayerMovementControl.Instance.MakePlayerShort(1);
 		PlayerMovementControl.Instance.DeBuffThePlayer(1);
 		

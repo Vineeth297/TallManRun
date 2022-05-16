@@ -4352,6 +4352,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 56064074780680604, guid: 8d1b7e57c14b4af44af5b2f0baa7f1db, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -52.030518
+      objectReference: {fileID: 0}
     - target: {fileID: 56064075049907226, guid: 8d1b7e57c14b4af44af5b2f0baa7f1db, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -4610,8 +4614,36 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6139042375225416906, guid: 4209690236e0c224983d7caac0c6ca47, type: 3}
+      propertyPath: cylinderMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 275ec8a60d9fc7d419be9f53117c47ed, type: 2}
+    - target: {fileID: 6139042375225416906, guid: 4209690236e0c224983d7caac0c6ca47, type: 3}
       propertyPath: rotationLerpValue
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139042375225416906, guid: 4209690236e0c224983d7caac0c6ca47, type: 3}
+      propertyPath: cylinderDefaultColor.b
+      value: 0.23921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139042375225416906, guid: 4209690236e0c224983d7caac0c6ca47, type: 3}
+      propertyPath: cylinderDefaultColor.g
+      value: 0.23921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139042375225416906, guid: 4209690236e0c224983d7caac0c6ca47, type: 3}
+      propertyPath: cylinderDefaultColor.r
+      value: 0.9254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139042375225416906, guid: 4209690236e0c224983d7caac0c6ca47, type: 3}
+      propertyPath: cylinderPositiveColor.b
+      value: 0.3033666
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139042375225416906, guid: 4209690236e0c224983d7caac0c6ca47, type: 3}
+      propertyPath: cylinderPositiveColor.g
+      value: 0.7735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 6139042375225416906, guid: 4209690236e0c224983d7caac0c6ca47, type: 3}
+      propertyPath: cylinderPositiveColor.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4209690236e0c224983d7caac0c6ca47, type: 3}

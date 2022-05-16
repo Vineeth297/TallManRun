@@ -10,6 +10,7 @@ public class CameraController : MonoBehaviour
 	private Vector3 _playersLastPosition;
 	private float _toMoveDistanceInZ;
 	private float _toMoveDistanceInY;
+	private float _toMoveDistanceInX;
 
 	private void Start()
 	{
@@ -21,6 +22,7 @@ public class CameraController : MonoBehaviour
 	{
 		_toMoveDistanceInZ = player.transform.position.z - _playersLastPosition.z;
 		_toMoveDistanceInY = player.transform.position.y - _playersLastPosition.y;
+		_toMoveDistanceInX = player.transform.position.x - _playersLastPosition.x;
 
 		if (!(_toMoveDistanceInZ > 0f)) return;
 

@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -27,10 +28,14 @@ public class BodyChangeGate : MonoBehaviour
 
 	public Color positiveColor;
 	public Color negativeColor;
+
+	private SoundManager _sound;
 	
 
 	private void Start()
 	{
+		_sound = SoundManager.Instance;
+		
 		_player = PlayerMovementControl.Instance;
 		if (changeType == ChangeType.Fat || changeType == ChangeType.Tall)
 		{
@@ -53,17 +58,31 @@ public class BodyChangeGate : MonoBehaviour
 			switch (changeType)
 			{
 				case ChangeType.Tall:
+				{
 					_player.MakeThePlayerTall(factor);
+					_sound.PlaySound(_sound.multiplierAdditionSound);
 					break;
+				}
 				case ChangeType.Shrink:
+				{
+					_sound.PlaySound(_sound.multiplierSubractionSound);
 					_player.MakePlayerShort(factor);
 					break;
+				}
 				case ChangeType.Fat:
+				{
+					_sound.PlaySound(_sound.multiplierAdditionSound);
 					_player.BuffThePlayer(factor);
 					break;
+				}
 				case ChangeType.Skinny:
+				{
+					_sound.PlaySound(_sound.multiplierSubractionSound);
 					_player.DeBuffThePlayer(factor);
 					break;
+				}
+				default:
+					throw new ArgumentOutOfRangeException();
 			}
 		}
 		_hasBeenUsed = true;

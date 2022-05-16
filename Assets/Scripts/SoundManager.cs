@@ -14,6 +14,10 @@ public class SoundManager : MonoBehaviour
 	public AudioClip bossKickSound;
 	public AudioClip jumpSound;
 	public AudioClip obstacleHitSound;
+	public AudioClip playerFallingDown;
+	public AudioClip movingObstacleHitSound;
+	public AudioClip pickUpSound;
+	public AudioClip finalJumpSound;
 
 	private void Awake()
 	{

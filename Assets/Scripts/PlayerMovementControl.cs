@@ -37,6 +37,7 @@ public class PlayerMovementControl : MonoBehaviour
 	private RopeController _ropeController;
 	private bool _toGrowTall;
 	private bool _toShrink;
+	public bool isAtSprintingPhase;
 
 	public List<Transform> startingPositions;
 	public List<Transform> endingPositions;
@@ -44,14 +45,19 @@ public class PlayerMovementControl : MonoBehaviour
 	public GameObject spherePrefab;
 	public List<Transform> spheres;
 	public List<Transform> spherePositions;
+
+	public Material cylinderMaterial;
+	public Color cylinderPositiveColor;
+	public Color cylinderNegativeColor;
 	
+	public Color cylinderDefaultColor;
+
 	private CylinderGeneration _spineCylinder;
 
 	public float minimumScaleValue = 0.01f;
 	public float minimumPositionDifferenceValue = 1f;
 
-	private List<Tween> _lastScalingCylinderTweens, _lastScalingSphereTweens;
-
+	public static Sequence ExistingSequence;
 	private void Awake()
 	{
 		if (Instance)
@@ -72,14 +78,9 @@ public class PlayerMovementControl : MonoBehaviour
 		GenerateCylinders();
 
 		_spineCylinder = scalingBone.GetComponent<CylinderGeneration>();
+		print(_spineCylinder);
+		cylinderMaterial.color = cylinderDefaultColor;
 
-		_lastScalingCylinderTweens = new List<Tween>();
-		for (var i = 0; i < cylinderList.Count; i++)
-			_lastScalingCylinderTweens.Add(null);
-		
-		_lastScalingSphereTweens = new List<Tween>(spheres.Count);
-		for (var i = 0; i < spheres.Count; i++)
-			_lastScalingSphereTweens.Add(null);
 	}
 
 	private void Update()
@@ -171,6 +172,7 @@ public class PlayerMovementControl : MonoBehaviour
 
 	public void BuffThePlayer(int factor)
 	{
+		ChangeToPositiveColor();
 		var buffValue = factor * 0.1f;
 		print(buffValue);
 		for (var i = 0; i < startingPositions.Count; i++)
@@ -187,11 +189,12 @@ public class PlayerMovementControl : MonoBehaviour
 		}
 
 		var spineCylinder = _spineCylinder.transform.localScale;
-		_spineCylinder.transform.DOScale(new Vector3( buffValue, buffValue,0) + spineCylinder, 2f);
+		_spineCylinder.transform.DOScale(new Vector3( buffValue, buffValue,0) + spineCylinder, 2f).OnComplete(ChangeToDefaultColor);
 	}
 
 	public void DeBuffThePlayer(int factor)
 	{
+		
 		var buffValue = factor * 0.1f;
 		var spineCylinder = _spineCylinder.transform.localScale;
 		print(spineCylinder);
@@ -228,9 +231,11 @@ public class PlayerMovementControl : MonoBehaviour
 
 	private void MoveTheTorsoUp(int factor)
 	{
+		ChangeToPositiveColor();
 		var buffValue = factor * 0.1f;
-		lengthEffector.transform.DOMoveY(lengthEffector.position.y + buffValue, 2f).SetEase(Ease.OutExpo);
+		lengthEffector.transform.DOMoveY(lengthEffector.position.y + buffValue, 1f).SetEase(Ease.OutExpo);
 		_toGrowTall = false;
+		Invoke(nameof(ChangeToDefaultColor),0.5f);
 	}
 
 	private void MoveTheTorsoDown(int factor)
@@ -270,11 +275,20 @@ public class PlayerMovementControl : MonoBehaviour
 		var x = scale <= minimumScaleValue;
 		if (x)
 		{
+			ResetPlayerInput();
 			DisappearAllTheCylinders();
 			head.transform.parent = null;
 			head.GetComponent<Rigidbody>().isKinematic = false;
 			head.SetActive(true);
-			GameManager.Instance.ShowLosePanel();
+			if (!isAtSprintingPhase)
+			{
+				GameManager.Instance.ShowLosePanel();
+			}
+			else if (isAtSprintingPhase)
+			{
+				GameManager.Instance.ShowWinPanel();
+
+			}
 			return x;
 		}
 		else
@@ -324,33 +338,21 @@ public class PlayerMovementControl : MonoBehaviour
 
 	public void ResetPlayerInput()
 	{
-		xSpeed = 3f;
-		movementSpeed = 3f;
+		xSpeed = 1.75f;
+		movementSpeed = 4.25f;
 	}
 
 	public void DisappearAllTheCylinders()
 	{
 		var maxIterations = startingPositions.Count;
-		for (var i = 0; i < maxIterations; i++)
-		{
-			/*var sphere = Instantiate(spherePrefab, startingPositions[i]);
-			spheres.Add(sphere.transform);*/
-			// _ropeController.UpdateRope(startingPositions[i], endingPositions[i], cylinderList[i]);
-			//print(i);
-			cylinderList[i].gameObject.SetActive(false);
-		}
+		for (var i = 0; i < maxIterations; i++) cylinderList[i].gameObject.SetActive(false);
 
-		foreach (var sphere in spheres)
-		{
-			// var sphere = Instantiate(spherePrefab, position);
-			// spheres.Add(sphere.transform);
-			sphere.gameObject.SetActive(false);
-
-		}
+		foreach (var sphere in spheres) sphere.gameObject.SetActive(false);
 	}
 
 	public void JumpKarao(Vector3 jumpTargetPosition)
 	{
+		SoundManager.Instance.PlaySound(SoundManager.Instance.finalJumpSound);
 		transform.DOJump(jumpTargetPosition, 5f, 1, 3f)
 			.OnComplete(() =>
 			{
@@ -363,5 +365,15 @@ public class PlayerMovementControl : MonoBehaviour
 						GameManager.Instance.ShowWinPanel();
 					});
 			});
+	}
+
+	public void ChangeToPositiveColor()
+	{
+		cylinderMaterial.color = cylinderPositiveColor;
+	}
+
+	public void ChangeToDefaultColor()
+	{
+		cylinderMaterial.color = cylinderDefaultColor;
 	}
 }

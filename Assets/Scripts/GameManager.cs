@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
 			Destroy(gameObject);
 		else
 			Instance = this;
+
+		Application.targetFrameRate = 120;
 	}
 
 	private void Start()
@@ -42,11 +44,13 @@ public class GameManager : MonoBehaviour
 	
 	private void WinPanel()
 	{
+		SoundManager.Instance.PlaySound(SoundManager.Instance.levelWinSound);
 		winPanel.SetActive(true);
 	}
 
 	private void LosePanel()
 	{
+		SoundManager.Instance.PlaySound(SoundManager.Instance.levelFailSound);
 		losePanel.SetActive(true);
 	}
 	
@@ -66,5 +70,6 @@ public class GameManager : MonoBehaviour
 	{
 		diamondCount += 1;
 		diamondCountText.text = diamondCount.ToString();
+		SoundManager.Instance.PlaySound(SoundManager.Instance.pickUpSound);
 	}
 }

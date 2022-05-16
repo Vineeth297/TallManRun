@@ -14,6 +14,7 @@ public class BossMech : MonoBehaviour
 	{
 		if (other.CompareTag("Player"))
 		{
+			SoundManager.Instance.PlaySound(SoundManager.Instance.bossKickSound);
 			bossAnimator.SetTrigger(FallingHash);
 		}
 	}

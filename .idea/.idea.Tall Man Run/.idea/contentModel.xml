@@ -416,6 +416,7 @@
           <e p="BossMech.cs" t="Include" />
           <e p="CameraController.cs" t="Include" />
           <e p="CylinderGeneration.cs" t="Include" />
+          <e p="FinalJumpPlatform.cs" t="Include" />
           <e p="FinalJumpStart.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="IObstacleDamage.cs" t="Include" />

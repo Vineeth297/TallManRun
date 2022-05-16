@@ -25,6 +25,7 @@ public class ObstacleMovement : MonoBehaviour
 	private void OnTriggerEnter(Collider other)
 	{
 		if (!other.CompareTag("Player")) return;
+		SoundManager.Instance.PlaySound(SoundManager.Instance.movingObstacleHitSound);
 		PlayerMovementControl.Instance.MakePlayerShort(1);
 		PlayerMovementControl.Instance.DeBuffThePlayer(1);
 	}

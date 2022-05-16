@@ -4504,18 +4504,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1559936180919294512, guid: 8d9d4606101f5d54b9c779ce74e2226b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1559936182087931848, guid: 8d9d4606101f5d54b9c779ce74e2226b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1559936182337410639, guid: 8d9d4606101f5d54b9c779ce74e2226b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3968153098202609212, guid: 8d9d4606101f5d54b9c779ce74e2226b, type: 3}
       propertyPath: m_Name
       value: SprintingRamp
@@ -5861,18 +5849,6 @@ PrefabInstance:
     - target: {fileID: 6084182122355386689, guid: 4209690236e0c224983d7caac0c6ca47, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6139042375225416906, guid: 4209690236e0c224983d7caac0c6ca47, type: 3}
-      propertyPath: leftBoundary
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6139042375225416906, guid: 4209690236e0c224983d7caac0c6ca47, type: 3}
-      propertyPath: rightBoundary
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6139042375225416906, guid: 4209690236e0c224983d7caac0c6ca47, type: 3}
-      propertyPath: rotationLerpValue
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4209690236e0c224983d7caac0c6ca47, type: 3}
